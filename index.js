@@ -1,8 +1,8 @@
 
-//import {
-//    Dimensions,
-//    PixelRatio,
-//} from 'react-native';
+import {
+   Dimensions,
+   PixelRatio,
+} from 'react-native';
 
 
 const dpW = Dimensions.get('window').width;
