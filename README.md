@@ -1,4 +1,4 @@
-# [React Native Responsive](https://github.com/alphabeats-works/react-native-responsive)
+# [rn-responsive-units](https://github.com/alphabeats-works/react-native-responsive)
 
 * **Conversion of units**  - pixels, percentages, dp, inch, mm
 
@@ -12,7 +12,7 @@ npm install react-native-responsive
 
 ```js
 import React from 'react'
-import { units, Size } from 'react-native-responsive'
+import { units, Size } from 'rn-responsive-units'
 ```
 
 ### Get the desired units by one of the 2 conversion methods:
