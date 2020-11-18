@@ -5,9 +5,9 @@
 //} from 'react-native';
 
 
-const dpW = 20//Dimensions.get('window').width;
-const dpH = 20//Dimensions.get('window').height;
-const pixDens = 20//PixelRatio.get();
+const dpW = Dimensions.get('window').width;
+const dpH = Dimensions.get('window').height;
+const pixDens = PixelRatio.get();
 
 export const units = {
     PIXELS : 0,
