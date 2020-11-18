@@ -1,15 +1,15 @@
 
-import {
-    Dimensions,
-    PixelRatio,
-} from 'react-native';
+//import {
+//    Dimensions,
+//    PixelRatio,
+//} from 'react-native';
 
 
-const dpW = Dimensions.get('window').width;
-const dpH = Dimensions.get('window').height;
-const pixDens = PixelRatio.get();
+const dpW = 20//Dimensions.get('window').width;
+const dpH = 20//Dimensions.get('window').height;
+const pixDens = 20//PixelRatio.get();
 
-const units = {
+export const units = {
     PIXELS : 0,
     WPERC : 1,
     HPERC: 2,
@@ -18,7 +18,7 @@ const units = {
     DP: 5
 }
 
-class Size {
+export class Size {
     constructor(size, type) {
         if (type == units.PIXELS) {
             this.dp = size / pixDens;
@@ -37,7 +37,35 @@ class Size {
         }
     }
 
+    static pixelsToDP(size) {
+        return size / pixDens;
+    }
+
+    static widthPercToDP(size) {
+        return dpW * size / 100;
+    }
+
+    static heightPercToDP(size) {
+        return dpH * size / 100;
+    }
+
+    static inchToDP(size) {
+        return size * 160;
+    }
+
+    static mmToDP(size) {
+        return size * 160 / 25.4;
+    }
+    
+
     getSize() {
         return this.dp
     }
+}
+
+
+
+module.exports = {
+    Size: Size,
+    units: units
 }

@@ -1,6 +1,6 @@
 {
-  "name": "react-native-responsive",
-  "version": "1.0.0",
+  "name": "rn-responsive-units",
+  "version": "1.0.1",
   "description": "A package to convert the most-common measurement units to react-native standard dp",
   "main": "index.js",
   "scripts": {
